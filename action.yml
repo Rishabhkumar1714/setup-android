@@ -1,12 +1,12 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Build Android projects'
+description: 'A full-fledged environment for Android builds'
+author: 'Harsh Shandilya (msfjarvis)'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  gradleTasks:
+    description: 'Gradle tasks to run - If you want to run ./gradlew assemble, specify assemble here. '
+    default: 'assembleDebug'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.gradleTasks }}

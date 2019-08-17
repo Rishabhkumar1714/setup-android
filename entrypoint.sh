@@ -1,3 +1,3 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 
-echo "hello $1"
+./gradlew "${1:?}"

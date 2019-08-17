@@ -1,6 +1,8 @@
 name: 'Build Android projects'
 description: 'A full-fledged environment for Android builds'
 author: 'Harsh Shandilya (msfjarvis)'
+icon: 'arrow-right'
+color: 'green'
 inputs: 
   gradleTasks:
     description: 'Gradle tasks to run - If you want to run ./gradlew assemble, specify assemble here. '

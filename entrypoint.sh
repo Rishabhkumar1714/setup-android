@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-./gradlew "${1:?}"
+chmod +x ./gradlew
+
+bash -c "./gradlew ${1:?}"

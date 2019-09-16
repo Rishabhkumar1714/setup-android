@@ -1,4 +1,4 @@
-FROM msfjarvis/docker-android-sdk:alpine-standalone
+FROM msfjarvis/docker-android-sdk:ubuntu-standalone
 
 LABEL version="0.1"
 LABEL repository="https://github.com/msfjarvis/setup-android"

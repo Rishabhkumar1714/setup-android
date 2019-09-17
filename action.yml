@@ -1,4 +1,4 @@
-name: 'Build Android projects'
+name: 'setup-android'
 description: 'A full-fledged environment for Android builds'
 author: 'Harsh Shandilya (msfjarvis)'
 icon: 'arrow-right'

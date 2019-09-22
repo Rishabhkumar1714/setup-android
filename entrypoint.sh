@@ -2,4 +2,6 @@
 
 chmod +x ./gradlew
 
-bash -c "./gradlew ${1:?}"
+if [ -z "${1}" ]; then
+    bash -c "./gradlew ${1:?}"
+fi

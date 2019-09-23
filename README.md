@@ -13,18 +13,19 @@ This Action lets you build Android apps in an Android SDK environment with nearl
 
 ```yml
 - name: "Run test suite"
-  uses: msfjarvis/setup-android@0.2
+  uses: msfjarvis/setup-android@1.0
   with:
-    gradleTasks: "dependencies spotlessApply detekt assembleDebug"
+    entrypoint: ./gradlew
+    args: dependencies spotlessApply detekt assembleDebug
 ```
 
-With this configuration the container will run `./gradlew dependencies spotlessApply detekt assembleDebug` as a build step. A future release of this Action will deprecate the `gradleTasks` input and let users run arbitrary commands at will. Switch your 'Watching' status to 'Releases only' to be notified when the update goes out.
+With this configuration the container will run `./gradlew dependencies spotlessApply detekt assembleDebug` as a build step.
 
 ## Changelog
 
-### Unreleased
+### 1.0
 
-- Allow running arbitrary tasks with `run: <commands>` and deprecate the `gradleTasks` input.
+- Allow running arbitrary tasks with `run: <commands>`.
 
 ### 0.2
 

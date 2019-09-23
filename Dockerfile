@@ -1,6 +1,6 @@
 FROM msfjarvis/docker-android-sdk:ubuntu-standalone
 
-LABEL version="0.2"
+LABEL version="1.0"
 LABEL repository="https://github.com/msfjarvis/setup-android"
 LABEL homepage="https://github.com/msfjarvis/setup-android"
 LABEL maintainer="Harsh Shandilya"

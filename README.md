@@ -35,3 +35,26 @@ With this configuration the container will run `./gradlew dependencies spotlessA
 ### 0.1
 
 - Initial release
+Contenedor de compilación de Android para acciones de GitHub
+Esta acción le permite crear aplicaciones de Android en un entorno de Android SDK con casi todo lo que se encuentra en la lista de paquetes de SDK, ya instalado. Si encuentra algo que falta, comience un problema aquí para que pueda solucionarlo.
+
+Usa esta acción
+
+Contenido
+Uso
+Registro de cambios
+Uso
+- nombre: "Ejecutar conjunto de pruebas"
+   utiliza: msfjarvis/setup-android@1.0
+   con:
+     punto de entrada: ./gradlew
+     args: spotlessAplicar dependencias detekt assembleDebug
+Con esta configuración, el contenedor ejecutará ./gradlew dependencias spotlessAplicar detekt assembleDebug como un paso de compilación.
+
+Registro de cambios
+1.0
+Permita ejecutar tareas arbitrarias con run: <comandos>.
+0.2 0.2
+Cambie al sabor de la imagen base basado en Ubuntu. Esto es útil para obtener la versión del parche (1) que requiero en mis proyectos.
+0.1
+Lanzamiento inicial
